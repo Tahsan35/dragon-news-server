@@ -21,8 +21,8 @@ app.get('/category/:id', (req, res) => {
         res.send(news);
     }
     else {
-        const categoryNews = news.filter(n => n.category_id === id)
-        res.send(categoryNews)
+        const category_news = news.filter(n => n.category_id === id)
+        res.send(category_news)
     }
 })
 app.get('/news', (req, res) => {
